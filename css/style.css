@@ -1,0 +1,83 @@
+body {
+    background-color: #999999;
+}
+#canvas {
+    width: 50%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+}
+.hex-row-a, .hex-row-b, .hex-row-top {
+    position: relative;
+    height: 25%;
+}
+.hex-row-a {
+    
+}
+.hexagon {
+    position: relative;
+    width: 86px; 
+    height: 33%;
+    background-color: #ffffff;
+    margin: 20px 0;
+    float: left;
+    margin-right: 7px;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 43px solid transparent;
+    border-right: 43px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 20px solid #ffffff;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 20px solid #ffffff;
+}
+.hexagon.unactive:before {
+    border-bottom: 20px solid transparent;
+}
+.hexagon.unactive:after {
+    border-top: 20px solid transparent;
+}
+.hexagon.unactive {
+    background-color: transparent;
+}
+#second {
+    top: -60px;
+}
+#third {
+    top: -120px;
+}
+#fourth {
+    top: -180px;
+}
+#fifth {
+    top: -240px;
+}
+.hex-row-b {
+}
+.hex-row-a {
+    left: 45px;
+}
+.hex-row-b, .hex-row-a {
+    position: relative;
+    width: auto;
+}
+.hex-row-a.top {
+    padding-left: 233px;
+    width: 50%
+}
+.hex-row-b.top {
+    padding-left: 277px;
+}
